@@ -39,12 +39,12 @@
     <!-- Use this for the leaderboard  -->
     <ol>
         <!--<li>%name%: %points% Points</li>-->
-        <li>Darya van Tienhoven: 3 Points</li>
+        <li>Darya van Tienhoven: 28 Points</li>
         <li>Debby Spaninks: 1 Point</li>
     </ol>
     <script>
         var today = new Date();
-        document.getElementById("days-left-counter").innerHTML = new Date(today.getFullYear(), today.getMonth(), 0).getDate() - today.getDate() + 1;
+        document.getElementById("days-left-counter").innerHTML = new Date(today.getFullYear(), today.getMonth() + 1, 0).getDate() - today.getDate() + 1;
     </script>
 </body>
 </html>
