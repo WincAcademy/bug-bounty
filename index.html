@@ -1,66 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <link rel="stylesheet" type="text/css" href="style.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
 
     <title>🐛 Winc Bug Bounty Program</title>
-</head>
-<body>
+  </head>
+  <body>
     <h1 class="rotate-10">🐛 Winc Bug Bounty Program</h1>
-    <p style="padding: 20px; border-radius: 50px; width: 100%;">We try our best
-    to make flawless content.</p>
-    <p class="rotate-5 wonky" style="width: 30%;">But things can slip through and get a
-    little wonky!</p>
-    <p class="hover-rotate">This particular page is obviously totally fine. This is top-notch
-    engineering. But we would love your help in finding bugs in our course
-    material.</p>
+    <p style="padding: 20px; border-radius: 50px; width: 100%">
+      We try our best to make flawless content.
+    </p>
+    <p class="rotate-5 wonky" style="width: 30%">
+      But things can slip through and get a little wonky!
+    </p>
+    <p class="hover-rotate">
+      This particular page is obviously totally fine. This is top-notch
+      engineering. But we would love your help in finding bugs in our course
+      material.
+    </p>
 
     <h2>How to Earn Bug Points 🐜</h2>
     <ul>
-        <li>A bug in our example code: 20 points</li>
-        <li>A bug in Wincpy: 20 points</li>
-        <li>A broken hyperlink: 10 points</li>
-        <li>A typo in our text: 1 point</li>
+      <li>A bug in our example code: 20 points</li>
+      <li>A bug in Wincpy: 20 points</li>
+      <li>A broken hyperlink: 10 points</li>
+      <li>A typo in our text: 1 point</li>
     </ul>
-    <p>Send a message in the <code>#feedback</code> channel on Slack 💬 to earn
-    your points! The leaderboard resets every first day of the month and the
-    winner will receive a small prize and eternal fame! 🪲.</p>
+    <p>
+      Send a message in the <code>#feedback</code> channel on Slack 💬 to earn
+      your points! The leaderboard resets every first day of the month and the
+      winner will receive a small prize and eternal fame! 🪲.
+    </p>
     <div class="days-left-box">
-        <p class="days-left-description">DAYS LEFT UNTIL REWARD AND RESET</p>
-        <p id="days-left-counter"></p>
+      <p class="days-left-description">DAYS LEFT UNTIL REWARD AND RESET</p>
+      <p id="days-left-counter"></p>
     </div>
     <h2>🦗 Leaderboard</h2>
     <!-- Use this in case no one has reported anything yet -->
-     <!--<p class="nobody">No one has reported any bugs yet. The bounty is yours for the taking!</p> -->
+    <!--<p class="nobody">No one has reported any bugs yet. The bounty is yours for the taking!</p> -->
     <!-- Use this for the leaderboard  -->
     <ol>
-        <!--<li>%name%: %points% Points</li>-->
-        <li>Darya: 159 Points</li>
-        <li>Kittie: 112 Points</li>
-        <li>Dominique: 80 Points</li>
-        <li>Rishaan: 83 Points </li>
-        <li>Paul: 41 Points</li>
-        <li>Frank R: 26 Points</li>
-        <li>Erwin: 21 Points</li>
-        <li>David: 15 Points</li>
-        <li>Sacha: 11 Point</li>
-        <li>Anja R: 10 Points</li>
-        <li>Arjan H: 5 Points</li>
-        <li>Debby: 4 Points</li>        
-        <li>Annemarie: 1 Point</li>
-        <li>Damian: 1 Point</li>
-        <li>Steven K: 6 Point</li>
-        <li>Lukas K: 1 Point</li>
-        <li>Mart van den B: 1 Point</li>
+      <!--<li>%name%: %points% Points</li>-->
+      <li>Darya: 159 Points</li>
+      <li>Kittie: 112 Points</li>
+      <li>Dominique: 80 Points</li>
+      <li>Rishaan: 83 Points</li>
+      <li>Paul: 41 Points</li>
+      <li>Frank R: 26 Points</li>
+      <li>Erwin: 21 Points</li>
+      <li>Steven K: 16 Point</li>
+      <li>David: 15 Points</li>
+      <li>Sacha: 11 Point</li>
+      <li>Anja R: 10 Points</li>
+      <li>Arjan H: 5 Points</li>
+      <li>Debby: 4 Points</li>
+      <li>Annemarie: 1 Point</li>
+      <li>Damian: 1 Point</li>
+      <li>Lukas K: 1 Point</li>
+      <li>Mart van den B: 1 Point</li>
     </ol>
 
     <script>
-        const today = new Date();
-        document.getElementById("days-left-counter").innerHTML = new Date(today.getFullYear(), today.getMonth() + 1, 0).getDate() - today.getDate() + 1;
+      const today = new Date();
+      document.getElementById("days-left-counter").innerHTML =
+        new Date(today.getFullYear(), today.getMonth() + 1, 0).getDate() -
+        today.getDate() +
+        1;
     </script>
-</body>
+  </body>
 </html>
